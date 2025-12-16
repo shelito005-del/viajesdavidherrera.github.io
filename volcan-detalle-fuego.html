@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Volcán de Fuego - Volcano Diaries</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec4913",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221510",
+                        "text-light": "#181311",
+                        "text-muted-light": "#896b61",
+                        "text-dark": "#eaddd7",
+                        "text-muted-dark": "#b09e96"
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"],
+                        "sans": ["Noto Sans", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-display antialiased transition-colors duration-200">
+
+<div class="sticky top-0 z-50 flex items-center bg-white/90 dark:bg-background-dark/90 backdrop-blur-md p-4 justify-start border-b border-gray-100 dark:border-gray-800">
+    <a href="index.html" class="text-text-light dark:text-text-dark flex size-12 shrink-0 items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Volver al inicio">
+        <span class="material-symbols-outlined text-[24px]">arrow_back</span>
+    </a>
+    <h2 class="text-text-light dark:text-text-dark text-xl font-bold leading-tight tracking-[-0.015em] text-center flex-1 pr-12">Detalle del Volcán</h2>
+</div>
+
+<div class="w-full @container">
+    
+    <div class="relative w-full aspect-[4/3] bg-gray-200 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA_GSfoOROBf35fkm_k7BMrVglyj7-auitLMI4Rjg7_T7mnItDE-GvzVaX7BSwnIa9OFVmuegAgqFjf_Szx1-9B0ysarb34Nv-naTJeZE5i5BhkBMul_eHisXQ7NW3nqVsuOIeSJr82uncPQADEUafbj2nI38RAzBpIobp00Zopz5AB73Da7E8sRwfnz6-Tlx4GsXNGWYh4ovPSJAF3BvagN5etie9vT3F3Lyl7RcfTdmCq2SvtA22NCv81_CHNKewkJuz1nMDhMI7z");' data-alt="Night eruption of Volcán de Fuego with lava trails">
+        </div>
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="absolute bottom-4 left-4">
+            <h1 class="text-white text-4xl font-black leading-tight drop-shadow-lg">Volcán de Fuego</h1>
+            <p class="text-white/90 text-sm font-sans uppercase tracking-widest font-bold mt-1">Guatemala, América Central</p>
+        </div>
+    </div>
+
+    <div class="p-4 md:p-6 lg:max-w-3xl lg:mx-auto">
+
+        <h2 class="text-2xl font-bold mt-4 mb-3 text-primary">Ficha Geográfica</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8 p-4 rounded-lg bg-white dark:bg-[#2a1d18] shadow-sm border border-gray-100 dark:border-gray-800">
+            
+            <div class="flex flex-col items-center text-center">
+                <span class="material-symbols-outlined text-primary text-3xl">landscape</span>
+                <p class="text-xl font-bold mt-1">3,763 m</p>
+                <span class="text-xs text-text-muted-light dark:text-text-muted-dark">Altitud</span>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+                <span class="material-symbols-outlined text-primary text-3xl">public</span>
+                <p class="text-xl font-bold mt-1">Guatemala</p>
+                <span class="text-xs text-text-muted-light dark:text-text-muted-dark">Ubicación</span>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+                <span class="material-symbols-outlined text-primary text-3xl">schedule</span>
+                <p class="text-xl font-bold mt-1">Activo</p>
+                <span class="text-xs text-text-muted-light dark:text-text-muted-dark">Estado</span>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+                <span class="material-symbols-outlined text-primary text-3xl">terrain</span>
+                <p class="text-xl font-bold mt-1">Estrato</p>
+                <span class="text-xs text-text-muted-light dark:text-text-muted-dark">Tipo Volcán</span>
+            </div>
+        </div>
+
+        <h2 class="text-2xl font-bold mt-8 mb-3 text-text-light dark:text-text-dark">Mi Crónica de Ascenso</h2>
+        
+        <p class="text-text-muted-light dark:text-text-muted-dark text-lg font-display leading-relaxed">
+            **10 de Mayo de 2024:** Este ascenso fue, sin duda, la experiencia más intensa y gratificante de mi bitácora. Llegamos al campo base de Acatenango al anochecer. La vista era espectacular, pero nada nos preparó para el show pirotécnico que nos esperaba.
+        </p>
+
+        <blockquote class="border-l-4 border-primary pl-4 my-6 text-text-light dark:text-text-dark italic text-base">
+            "Sentir el temblor de la tierra con cada explosión y ver la lava roja dibujar senderos en la noche fue una lección de humildad y poder natural."
+        </blockquote>
+
+        <p class="text-text-muted-light dark:text-text-muted-dark text-base leading-relaxed mb-4 font-sans">
+            La subida final al mirador fue exigente debido a la ceniza suelta, pero valió cada paso. Ver el amanecer sobre el cráter activo, con el Volcán de Agua en la distancia, es una imagen que guardaré para siempre. Es fundamental ir bien equipado, especialmente con ropa de abrigo para las noches heladas.
+        </p>
+
+        <h3 class="text-xl font-bold mt-10 mb-3 text-text-light dark:text-text-dark">Galería del Ascenso</h3>
+        <div class="grid grid-cols-2 gap-4">
+            <img src="http://googleusercontent.com/profile/picture/6" alt="Foto del ascenso al Volcán de Fuego 1" class="rounded-lg shadow-md aspect-square object-cover">
+            <img src="http://googleusercontent.com/profile/picture/7" alt="Foto del ascenso al Volcán de Fuego 2" class="rounded-lg shadow-md aspect-square object-cover">
+        </div>
+        
+    </div>
+
+</div>
+
+<div class="mt-12 bg-white dark:bg-[#1a100c] border-t border-gray-100 dark:border-gray-800 py-8 px-4 flex flex-col items-center text-center gap-4">
+    <h2 class="text-text-light dark:text-text-dark text-lg font-bold tracking-tight">Volcano Diaries</h2>
+    <div class="flex gap-6">
+        <a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">
+            <span class="material-symbols-outlined">photo_camera</span>
+        </a>
+        <a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">
+            <span class="material-symbols-outlined">public</span>
+        </a>
+        <a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">
+            <span class="material-symbols-outlined">rss_feed</span>
+        </a>
+    </div>
+    <p class="text-xs text-text-muted-light dark:text-text-muted-dark font-sans">
+        © 2024 Volcano Diaries. Todos los derechos reservados.<br/>
+        <span class="opacity-60">Diseñado con pasión por la montaña.</span>
+    </p>
+</div>
+
+</body>
+</html>
